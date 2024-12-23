@@ -18,6 +18,8 @@ describe('for adding new product on my list ', () => {
         await browser.pause(5000);
         const ID = await $('#__component0---main--creating-id-inner');
         await ID.setValue('134');
+        const name = await $('#__component0---main--creating-name-inner');
+        await name.setValue('John Doe');
 
     });
 });
