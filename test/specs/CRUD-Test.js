@@ -16,6 +16,8 @@ describe('for adding new product on my list ', () => {
         const deleteButton = await $('#__button0-BDI-content');
         await deleteButton.click();
         await browser.pause(5000);
+        const ID = await $('#__component0---main--creating-id-inner');
+        await ID.setValue('134');
 
     });
 });
