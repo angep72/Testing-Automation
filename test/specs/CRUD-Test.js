@@ -21,9 +21,13 @@ describe('for adding new product on my list ', () => {
         const name = await $('#__component0---main--creating-name-inner');
         await name.setValue('John Doe');
         const email= await $('#__component0---main--creating-email-inner');
-        await email.setValue('20');
+        await email.setValue('g@alustudent.com');
         const city = await $('#__component0---main--creating-city-inner');
         await city.setValue('New York');
+        const occupation = await $('#__component0---main--creating-occupation-inner');
+        await occupation.setValue('Doctor');
+        await browser.pause(5000);
+
 
     });
 });
