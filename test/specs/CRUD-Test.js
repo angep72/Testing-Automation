@@ -22,6 +22,8 @@ describe('for adding new product on my list ', () => {
         await name.setValue('John Doe');
         const email= await $('#__component0---main--creating-email-inner');
         await email.setValue('20');
+        const city = await $('#__component0---main--creating-city-inner');
+        await city.setValue('New York');
 
     });
 });
