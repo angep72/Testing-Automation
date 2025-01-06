@@ -37,7 +37,17 @@ describe('for adding new product on my list ', () => {
         await addButton.click();
         const confirmButton = await $('#__button8-content');
         await confirmButton.click();
-        await browser.pause(10000);
+        await browser.pause(5000);
         
+    });
+    it('should update the products', async () => {
+        const updateButton = await $('#__button2-__component0---main--suppliers-3-inner');
+        await updateButton.click();
+        const updateID = await $("#__component0---main--updating-id-inner")
+        await updateID.setValue('134');
+        const saveUpdated = await $('#__button6-inner');
+            await saveUpdated.click();
+        await browser.pause(5000);
+
     })
 });
