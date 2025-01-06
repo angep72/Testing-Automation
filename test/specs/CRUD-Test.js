@@ -13,8 +13,8 @@ describe('for adding new product on my list ', () => {
         await browser.pause(5000);
 
         //step 3 navigating on different pages 
-        const deleteButton = await $('#__button0-BDI-content');
-        await deleteButton.click();
+        const addButton = await $('#__button0-BDI-content');
+        await addButton.click();
         await browser.pause(5000);
         const ID = await $('#__component0---main--creating-id-inner');
         await ID.setValue('134');
